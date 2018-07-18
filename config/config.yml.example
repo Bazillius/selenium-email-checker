@@ -1,0 +1,5 @@
+gmail_access:
+    host: https://gmail.com
+    username: you_user@gmail.com
+    password: you_pass
+webdriver_path: path_to_chromedriver
