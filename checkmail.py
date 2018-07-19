@@ -44,6 +44,7 @@ def get_email_title():
         # driver.get('http://gmail.com')
         time.sleep(5)
 
+        # global email_title
         email_title = driver.find_elements_by_xpath("//span[@class='bog']")
 
         for i in email_title:
@@ -55,12 +56,30 @@ def get_email_title():
         return True
 
 
+def get_email_time():
+    try:
+        print('Get time list from last 50 emails...')
+        # driver.get('http://gmail.com')
+        time.sleep(5)
+
+        # global email_time
+        email_time = driver.find_elements_by_xpath("//td[@class='xW xY ']")
+
+        for i in email_time:
+            print i.text
+
+    except Exception as ex:
+        print(str(ex))
+    finally:
+        return True
+
 
 if __name__ == '__main__':
     r_log = login_google()
     if r_log:
         print('Login to gmail...')
         get_email_title()
+        get_email_time()
     else:
         print('BooM!!! Something wrong :(')
 
