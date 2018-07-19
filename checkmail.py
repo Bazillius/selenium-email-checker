@@ -17,16 +17,16 @@ def login_google():
     try:
         time.sleep(1)
 
-        name_box = driver.find_element_by_id('identifierId').send_keys(main_config["gmail_access"]["username"])
+        driver.find_element_by_id('identifierId').send_keys(main_config["gmail_access"]["username"])
         time.sleep(1)
 
-        next_button = driver.find_element_by_id('identifierNext').click()
+        driver.find_element_by_id('identifierNext').click()
         time.sleep(1)
 
-        pass_box = driver.find_element_by_name('password').send_keys(main_config["gmail_access"]["password"])
+        driver.find_element_by_name('password').send_keys(main_config["gmail_access"]["password"])
         time.sleep(1)
 
-        next_button = driver.find_element_by_id('passwordNext').click()
+        driver.find_element_by_id('passwordNext').click()
         time.sleep(5)
 
         is_logged_in = True
