@@ -3,3 +3,14 @@ gmail_access:
     username: you_user@gmail.com
     password: you_pass
 webdriver_path: path_to_chromedriver
+
+db_config:
+    prod:
+        host: mysql_server_host
+        username: mysql_user
+        password: mysql_pass
+        db_name: mysql_db
+
+queries:
+    get_qa_user_id: select id from users where email="example_qa_email@gmail.com"
+    get_qa_last_subject: select subject from emails where user_id=%s and sent_at >= CURDATE() order by sent_at desc limit 1
