@@ -2,4 +2,10 @@
 config/*.yml
 
 # ignore screenshot
-*.png
+screenshots/*.png
+
+# ignore webdrv
+webdrv
+
+# ignore log
+*.log
