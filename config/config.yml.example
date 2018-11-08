@@ -1,4 +1,9 @@
-gmail_access:
+default:
     host: https://gmail.com
     username: you_user@gmail.com
     password: you_pass
+yahoo:
+    host: https://login.yahoo.com
+    username: you_user@gmail.com
+    password: you_pass
+
