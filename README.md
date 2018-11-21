@@ -22,6 +22,15 @@ Docker version 18.06.1-ce, build e68fc7a
 docker build -t python-selenium-app .
 ```
 
+### Params
+There are a three argv
+
+```
+"subject" - subject of mail
+"from" - email of sender
+"driver" - driver what will be use for checking, default driver is google
+```
+
 ### Start test
 
 ```

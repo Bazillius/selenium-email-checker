@@ -4,7 +4,9 @@ DriverAbstract class
 
 from selenium import webdriver
 
+
 class DriverAbstract:
+    driver = None
 
     def setUp(self):
 

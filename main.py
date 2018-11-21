@@ -17,7 +17,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 2:
         sender = sys.argv[2]
     if len(sys.argv) > 3:
-        sender = sys.argv[3]
+        provider = sys.argv[3]
 
     Test = {
         'google': TestGoogleMails,
